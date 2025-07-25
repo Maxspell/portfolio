@@ -853,3 +853,65 @@ body {
 }
 
 /*======= End Get in touch section =======*/
+
+/*======= Our clients section =======*/
+
+.our-clients-wrapper {
+    width: 100%;
+}
+
+.our-clients-swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+.our-clients-img {
+    flex-shrink: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.our-clients-img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.our-clients-details {
+    max-width: 500px;
+    width: 100%;
+}
+
+.our-clients-details p {
+    font-size: 22px;
+    color: var(--third-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--liner-color);
+}
+
+.our-clients-details h3 {
+    font-size: 24px;
+    color: var(--first-color);
+}
+
+.our-clients-details span {
+    font-size: 18px;
+    color: var(--third-color);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    font-size: 45px;
+    color: var(--second-color);
+}
