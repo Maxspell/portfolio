@@ -915,3 +915,108 @@ body {
     font-size: 45px;
     color: var(--second-color);
 }
+
+/*======= End Our clients section =======*/
+
+/*======= Contacts section =======*/
+
+.contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.contacts-left {
+    max-width: 418px;
+    width: 100%;
+}
+
+.contacts-left h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.contacts-list li {
+    margin-bottom: 40px;
+}
+
+.contacts-list h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contacts-list h3 i {
+    font-size: 30px;
+    color: var(--second-color);
+    margin-right: 10px;
+}
+
+.contacts-list span {
+    color: var(--third-color);
+    margin-left: 10px;
+}
+
+.contacts-list a {
+    color: var(--third-color);
+}
+
+.contacts-right {
+    max-width: 536px;
+    width: 100%;
+}
+
+.contacts-right p {
+    font-size: 28px;
+    color: var(--third-color);
+    margin-bottom: 30px;
+}
+
+.contacts-right p span {
+    display: block;
+    color: var(--first-color);
+    font-weight: 700;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+    font-size: var(--normal-font-size);
+    color: var(--first-color);
+    background: var(--bg-transparent-color-02);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    padding: 15px 40px 40px 20px;
+    margin-bottom: 20px;
+    transition: .3s linear;
+}
+
+.contacts-form textarea {
+    width: 100%;
+    resize: none;
+}
+
+.contacts-form input:focus,
+.contacts-form textarea:focus,
+.contacts-form input:active,
+.contacts-form textarea:active {
+    border-color: #614fd0;
+}
+
+.first-row input {
+    width: 100%;
+}
+
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.second-row input {
+    width: 48%;
+}
+
+/*======= End Contacts section =======*/
