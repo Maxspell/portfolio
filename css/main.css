@@ -58,11 +58,11 @@
     --scroll-thumb-hover-color: #454f6b;
 }
 
-.dark-theme .nav-menu-btn{
+.dark-theme .nav-menu-btn {
     background: url(../img/burger-white.svg) no-repeat center;
 }
 
-.dark-theme .nav-menu-btn.close{
+.dark-theme .nav-menu-btn.close {
     background: url(../img/close-white.svg) no-repeat center;
 }
 
@@ -161,6 +161,7 @@ body {
     text-transform: capitalize;
     color: var(--first-color);
     font-size: var(--normal-font-size);
+    transition: .3s linear;
 }
 
 .nav-link.active,
@@ -171,6 +172,7 @@ body {
 .nav-menu-btn {
     display: none;
 }
+
 /* end header */
 
 /*======= Home section =======*/
@@ -261,6 +263,7 @@ body {
     0% {
         transform: translateY(0);
     }
+
     30% {
         transform: translateY(10px);
     }
@@ -309,6 +312,7 @@ body {
     height: 5px;
     background: var(--second-color);
 }
+
 /*======= End styles for all sections =======*/
 
 /*======= About section =======*/
@@ -378,6 +382,7 @@ body {
     color: var(--third-color);
     font-size: var(--small-font-size);
 }
+
 /*======= End About section =======*/
 
 /*======= Skills section =======*/
@@ -583,7 +588,7 @@ body {
     justify-content: space-between;
 }
 
-.service-card > i {
+.service-card>i {
     color: var(--second-color);
     font-size: 48px;
     margin-bottom: 20px;
@@ -597,7 +602,7 @@ body {
 }
 
 .learn-more-btn {
-    color:  var(--third-color);
+    color: var(--third-color);
     cursor: pointer;
 }
 
@@ -647,7 +652,7 @@ body {
     transform: translateY(0);
 }
 
-.service-modal-body > i {
+.service-modal-body>i {
     position: absolute;
     top: 0;
     right: 0;
@@ -1061,14 +1066,14 @@ body {
 }
 
 .info-group h3,
-.follow-group h3{
+.follow-group h3 {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 30px;
 }
 
 .info-group ul,
-.follow-group ul{
+.follow-group ul {
     display: flex;
     gap: 30px;
 }
@@ -1090,3 +1095,37 @@ body {
     text-align: center;
     padding: 0 15px;
 }
+
+/*======= End Footer section =======*/
+
+/*======= Scroll to top =======*/
+
+.scroll-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    background: var(--second-color);
+    border-radius: 3px;
+    color: #fff;
+    font-size: var(--small-font-size);
+    cursor: pointer;
+    z-index: -1;
+    box-shadow: var(--box-shadow);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s linear;
+}
+
+.scroll-to-top.active {
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    right: 20px;
+}
+
+/*======= End Scroll to top =======*/
