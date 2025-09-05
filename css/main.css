@@ -1159,6 +1159,15 @@ body {
     .home-img img {
         margin: 0 auto;
     }
+
+    .about-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .professional-list {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 980px) {
