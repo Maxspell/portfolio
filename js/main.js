@@ -46,6 +46,26 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollBtn.addEventListener('click', handleScrollTop);
 });
 
+// Responsive navigation menu toggle
+const navBtn = document.querySelector('.nav-menu-btn');
+const navBar = document.querySelector('.nav');
+const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
+
+navBtn.addEventListener('click', () => {
+    navBtn.classList.toggle('close');
+    navBar.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navBtn.classList.remove('close');
+        navBar.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
 // Service section - Modal
 const serviceModal = document.querySelectorAll('.service-modal');
 const learnMoreBtn = document.querySelectorAll('.learn-more-btn');
@@ -102,3 +122,15 @@ const ourClientsSwiper = new Swiper('.our-clients-swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+ScrollReveal({
+    reset: true,
+    distance: '60px',
+    duration: 2500,
+    delay: 100
+})
+
+ScrollReveal().reveal('.home-info h1', { delay: 500, origin: 'left' });
+ScrollReveal().reveal('.home-img', { delay: 600, origin: 'right' });
+ScrollReveal().reveal('.media-icons a', { delay: 700, origin: 'top', interval: 200 });
+ScrollReveal().reveal('.home-info h3, .home-info p, .home-info-link', { delay: 600, origin: 'left' });
