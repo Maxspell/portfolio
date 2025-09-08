@@ -132,6 +132,8 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-info h1, .about-img', { delay: 500, origin: 'left' });
 ScrollReveal().reveal('.home-img, .description', { delay: 600, origin: 'right' });
+ScrollReveal().reveal('.skills-descrption, .work-exp-title, .services-description', { delay: 600, origin: 'left' });
+ScrollReveal().reveal('.education', { delay: 600, origin: 'bottom', interval: 300 });
 ScrollReveal().reveal('.media-icons a, .list-item', { delay: 700, origin: 'top', interval: 200 });
 ScrollReveal().reveal('.home-info h3, .home-info p, .home-info-link', { delay: 600, origin: 'left' });
 ScrollReveal().reveal('.inner-title, .inner-second-title', { delay: 500, opacity: 0, interval: 100 });

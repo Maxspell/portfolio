@@ -827,6 +827,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
     width: 90%;
     padding: 50px;
@@ -1237,9 +1238,46 @@ body {
     .follow-group {
         text-align: center;
     }
+
+    .get-in-touch .contact-card {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .client-swiper .swiper-slide {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-card h2 {
+        font-size: 40px;
+    }
+
+    .contact-card h3 {
+        font-size: 28px;
+    }
+
+    .contact-card h4 {
+        font-size: 18px;
+    }
+
+    .get-in-touch-link {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
 }
 
 @media (max-width: 450px) {
+    .inner-title {
+        font-size: 50px;
+    }
+
     .about-group {
         text-align: left;
     }
@@ -1259,6 +1297,20 @@ body {
 
     .info-group a {
         padding: 10px 0;
+    }
+
+    .education,
+    .work-exp .experience-card {
+        min-width: 295px;
+    }
+
+    .service-modal-body {
+        padding: 40px 15px 15px;
+    }
+
+    .service-modal-body h3,
+    .portfolio-modal-body h3 {
+        font-size: 25px;
     }
 }
 
