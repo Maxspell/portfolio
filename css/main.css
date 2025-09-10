@@ -121,8 +121,42 @@ body {
     padding: 0 15px;
 }
 
-.them-btn.sun .fa-sun {
+.theme-btn {
+    position: fixed;
+    z-index: 11;
+    top: 150px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px 0 0 5px;
+    background: var(--bg-transparent-color-01);
+    backdrop-filter: blur(20px);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.theme-btn .fa-sun,
+.theme-btn.sun .fa-moon {
+    display: none;
+}
+
+
+.theme-btn.sun .fa-sun {
     display: block;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb-color);
 }
 
 .main {
@@ -1247,6 +1281,11 @@ body {
     .client-swiper .swiper-slide {
         flex-direction: column;
     }
+
+    .contacts-wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1270,6 +1309,19 @@ body {
     .swiper-button-next,
     .swiper-button-prev {
         display: none;
+    }
+
+    .second-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-row input {
+        width: 100%;
+    }
+
+    .contacts-list p span {
+        display: inline;
     }
 }
 
@@ -1314,4 +1366,4 @@ body {
     }
 }
 
-/*======= End Media queries max-width: 980px =======*/
+/*======= End Media queries =======*/
